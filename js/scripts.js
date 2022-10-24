@@ -1,5 +1,19 @@
 window.addEventListener("load", function () {
 
+  let form = document.querySelector("form")
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    let input1Value = document.getElementById("input1").value;
+    let input2Value = document.getElementById("input2").value;
+    let input3Value = parseInt(document.getElementById("input3").value);
+
+    let array1 = [input1Value, input2Value, input3Value]
+    console.log(array1);
+
+  });
+
+
   // Create the elements 
   const body = document.querySelector("body");
   let h1Element1 = document.querySelector("h1");
@@ -11,7 +25,6 @@ window.addEventListener("load", function () {
   let liElement2 = document.createElement("li");
   let h2Element1 = document.createElement("h2");
   let aElement1 = document.createElement("a");
-
 
   // remove and replace h1
   h1Element1.remove();
