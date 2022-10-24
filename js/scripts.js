@@ -12,8 +12,14 @@ window.addEventListener("load", function () {
   let h2Element1 = document.createElement("h2");
   let aElement1 = document.createElement("a");
 
-  // Input the text for each element 
+
+  // remove and replace h1
+  h1Element1.remove();
+  let h1ElementReplacement = document.createElement("h1");
   // h1Element1.append("this");
+  body.append(h1ElementReplacement)
+  h1ElementReplacement.append("Website Rec Practice");
+
   body.append(pElement1);
   pElement1.append("The HTML of this webpage was created with JavaScript.");
   body.append(imgElement1);
